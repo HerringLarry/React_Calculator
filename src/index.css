@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
