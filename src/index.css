@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Georgia;
-  background-color:#3498db;
+  color:#3498db;;
+  background-color: white;
 }
 th {
     border-bottom: 1px solid #ddd;
@@ -21,7 +22,8 @@ h1{
   background: #3498db;
   padding: 10px 20px 10px 20px;
   border: solid #303030 4px;
-  text-shadow: 2px 2px grey;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 5px 10px #888888;
 
 }
 
@@ -37,5 +39,6 @@ button,input {
   padding: 10px 20px 10px 20px;
   border: solid #303030 8px;
   text-decoration: none;
-  text-shadow: 2px 2px grey;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 5px 10px #888888;
 }
