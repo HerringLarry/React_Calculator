@@ -2,7 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Main extends React.Component{
+class Calculator extends React.Component{
+	constructor(){
+		super();
+		this.state = {
+			currentValue: "0",
+		}
+		this.inputDigit.bind(this);
+	}
+
+	inputDigit(digit){
+		console.log('The link was clicked.');
+		this.setState({
+			if(this.state.currentValue!=0){
+			currentValue : this.state.currentValue + digit
+			}
+			else{
+				currentValue : digit
+			}
+		});
+	}
+
 	render(){
 		return(
 			<div>
@@ -10,32 +30,32 @@ class Main extends React.Component{
 				<table align="center">
 					<thead>
 						<tr>
-							<td colspan = "4"> <input type = "text" name = "display" id = "display" disabled/> </td>
+							<td colspan = "4"> <input type = "text" name = "display" id = "display" value={this.state.currentValue} disabled/> </td>
 						</tr>
 					</thead>
 					<tr>
-						<td><input type = "button" name = "one" value = "1"/> </td>
-						<td><input type = "button" name = "two" value = "2"/> </td>
-						<td><input type = "button" name = "three" value = "3"/> </td>
-						<td><input type = "button" name = "plus" value = "+"/> </td>
+						<td><button className = "calculator-key-one" onClick ={() => this.inputDigit(1)}> 1 </button> </td>
+						<td><button className = "calculator-key-two" onClick ={() => this.inputDigit(2)}> 2 </button></td>
+						<td><button className = "calculator-key-three" onClick ={() => this.inputDigit(3)}> 3 </button></td>
+						<td><button className = "calculator-key-plus" /*onClick ={() => this.inputDigit(1)}*/> + </button></td>
 					</tr>
 					<tr>
-						<td><input type = "button" name = "four" value = "4"/> </td>
-						<td><input type = "button" name = "five" value = "5"/> </td>
-						<td><input type = "button" name = "six" value = "6"/> </td>
-						<td><input type = "button" name = "minus" value = "-"/> </td>
+						<td><button className = "calculator-key-four" onClick ={() => this.inputDigit(4)}> 4 </button> </td>
+						<td><button className = "calculator-key-five" onClick ={() => this.inputDigit(5)}> 5 </button></td>
+						<td><button className = "calculator-key-six" onClick ={() => this.inputDigit(6)}> 6 </button></td>
+						<td><button className = "calculator-key-minus" /*onClick ={() => this.inputDigit(1)}*/> - </button></td>
 					</tr>
 					<tr>
-						<td><input type = "button" name = "seven" value = "7"/> </td>
-						<td><input type = "button" name = "eight" value = "8"/> </td>
-						<td><input type = "button" name = "nine" value = "9"/> </td>
-						<td><input type = "button" name = "times" value = "x"/> </td>
+						<td><button className = "calculator-key-seven" onClick ={() => this.inputDigit(7)}> 7 </button> </td>
+						<td><button className = "calculator-key-eight" onClick ={() => this.inputDigit(8)}> 8 </button></td>
+						<td><button className = "calculator-key-nine" onClick ={() => this.inputDigit(9)}> 9 </button></td>
+						<td><button className = "calculator-key-multiply" /*onClick ={() => this.inputDigit(1)}*/> x </button></td>
 					</tr>
 					<tr>
-						<td><input type = "button" name = "clear" value = "C"/> </td>
-						<td><input type = "button" name = "zero" value = "0"/> </td>
-						<td><input type = "button" name = "equals" value = "="/> </td>
-						<td><input type = "button" name = "divides" value = "/"/> </td>
+						<td><button className = "calculator-key-clear" /*onClick ={() => this.inputDigit(1)}*/> C </button> </td>
+						<td><button className = "calculator-key-zero" onClick ={() => this.inputDigit(0)}> 0 </button></td>
+						<td><button className = "calculator-key-equals" /*onClick ={() => this.inputDigit(3)}*/> = </button></td>
+						<td><button className = "calculator-key-divides" /*onClick ={() => this.inputDigit(1)}*/> / </button></td>
 					</tr>
 
 				</table>
@@ -45,5 +65,5 @@ class Main extends React.Component{
 
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<Calculator />, document.getElementById('root'));
 
