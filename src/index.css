@@ -3,6 +3,21 @@ body {
   padding: 0;
   font-family: Georgia;
 }
-th, td {
+th {
     border-bottom: 1px solid #ddd;
+}
+
+
+ /* Button */
+button,input {
+ -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  border: dotted #303030 8px;
+  text-decoration: none;
 }
