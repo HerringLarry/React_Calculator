@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Georgia;
+  background-color:#3498db;
 }
 th {
     border-bottom: 1px solid #ddd;
@@ -9,15 +10,32 @@ th {
 
 
  /* Button */
+h1{
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  border: solid #303030 4px;
+  text-shadow: 2px 2px grey;
+
+}
+
 button,input {
  -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Courier New;
+  font-weight: bold;
   color: #ffffff;
   font-size: 20px;
   background: #3498db;
   padding: 10px 20px 10px 20px;
-  border: dotted #303030 8px;
+  border: solid #303030 8px;
   text-decoration: none;
+  text-shadow: 2px 2px grey;
 }

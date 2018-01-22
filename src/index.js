@@ -54,7 +54,7 @@ class Calculator extends React.Component{
 				});
 			}
 			else if(this.state.currentOperation=="-"){
-				var total = parseFloat(this.state.currentValue) - parseFloat(this.state.secondaryValue);
+				var total = parseFloat(this.state.secondaryValue) - parseFloat(this.state.currentValue) ;
 				this.setState({
 					currentValue: total,
 					secondaryValue: "0",
@@ -72,7 +72,7 @@ class Calculator extends React.Component{
 				});
 			}
 			else{
-				var total = parseFloat(this.state.currentValue) / parseFloat(this.state.secondaryValue);
+				var total = parseFloat(this.state.secondaryValue) / parseFloat(this.state.currentValue);
 				this.setState({
 					currentValue: total,
 					secondaryValue: "0",
@@ -106,7 +106,7 @@ class Calculator extends React.Component{
 						<td><button className = "calculator-key-four" onClick ={() => this.inputDigit(4)}> 4 </button> </td>
 						<td><button className = "calculator-key-five" onClick ={() => this.inputDigit(5)}> 5 </button></td>
 						<td><button className = "calculator-key-six" onClick ={() => this.inputDigit(6)}> 6 </button></td>
-						<td><button className = "calculator-key-minus" onClick ={() => this.inputOperation("*")}> - </button></td>
+						<td><button className = "calculator-key-minus" onClick ={() => this.inputOperation("-")}> - </button></td>
 					</tr>
 					<tr>
 						<td><button className = "calculator-key-seven" onClick ={() => this.inputDigit(7)}> 7 </button> </td>
