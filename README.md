@@ -5,4 +5,5 @@ Simple calculator implemented with react. Created with create-react-app.
                 npm install
 
 # Usage
-                npm startSS
+                npm start
+
