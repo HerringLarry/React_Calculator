@@ -29,7 +29,10 @@ class Calculator extends React.Component{
 
 	clearValue(){
 		this.setState({
-			currentValue: "0"
+			currentValue: "0",
+			secondaryValue: "0",
+			currentOperation: "",
+			onSecond: false
 		});
 	}
 
@@ -89,7 +92,7 @@ class Calculator extends React.Component{
 	render(){
 		return(
 			<div>
-				<h1 align="center">React Calculator </h1>
+				<h1 align="center">Will's React Calculator </h1>
 				<table align="center">
 					<thead>
 						<tr>
