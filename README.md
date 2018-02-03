@@ -1,8 +1,8 @@
-#Introduction
+# Introduction
 Simple calculator implemented with react. Created with create-react-app.
 
-#Install
+# Install
                 npm install
 
-#Usage
+# Usage
                 npm startSS
